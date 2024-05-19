@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Panel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@drawable/header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dasboard">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="15dp"
+                android:paddingLeft="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang,"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/superadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Super Admin"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingVertical="15dp"
+                android:paddingRight="25dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/pp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btndasbord"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="DASHBOARD"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnnotifikasi"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="NOTIFIKASI"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnlihatlog"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="LIHAT LOG"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanagereport"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA REPORT DEMONSTATOR"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanageaktivitas"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA AKTIFITAS SUPERVISOR"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanagedatamaster"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA DATA MASTER"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnkelolapertanyaan"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA PERTANYAAN"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanageberanda"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA BERANDA"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanageproduk"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA PRODUK"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanageinovasi"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA INOVASI"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmanagetentangkami"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="KELOLA TENTANG KAMI"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

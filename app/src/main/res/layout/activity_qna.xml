@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.ActivityCustomer.QNA">
+
+    <LinearLayout
+        android:id="@+id/headerQna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@drawable/header" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="PERTANYAAN"
+            android:textColor="@color/main"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/skate"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/headerQna"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_qna"
+            android:layout_below="@id/headerQna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_qna"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/alignedFAQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/btntambahqna"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_buttondark"
+            android:text="Tambahkan Pertanyaan"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

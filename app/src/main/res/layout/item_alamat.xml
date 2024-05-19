@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/idalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="23dp"
+        app:cardElevation="5dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/namakantor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="namakantor"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alamat"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/telepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="telepon"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+</LinearLayout>

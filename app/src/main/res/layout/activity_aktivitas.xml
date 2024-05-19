@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.ActivityCustomer.Aktivitas">
+
+    <ImageView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:src="@drawable/header" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="AKTIVITAS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/main"
+        android:layout_gravity="center" />
+
+    <View
+        android:id="@+id/shadowheader"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:rotation="180"
+        android:background="@drawable/shadow"
+        android:layout_alignBottom="@+id/title" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/searchcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_aktivitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_aktivitas">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

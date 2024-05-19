@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.cakraagro.cakraagroindonesia.MainActivity">
+
+    <ImageView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:src="@drawable/header"
+        />
+    <View
+        android:id="@+id/shadowheader"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:rotation="180"
+        android:background="@drawable/shadow"
+        android:layout_alignBottom="@+id/header_title"
+        />
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/header_title"
+        android:layout_above="@id/navigation"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@drawable/color_state"
+        app:itemTextColor="@drawable/color_state"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Aktivitas.TambahAktivitas">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:src="@drawable/header"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:gravity="center"
+                android:text="DAFTAR AKTIVITAS BARU"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_dasboard"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/tanggalaktivitas"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Tanggal"
+                android:textColor="@color/black"
+                android:inputType="none"
+                android:focusable="false"
+                android:paddingStart="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/viewspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/custom_input"
+                    android:spinnerMode="dropdown"
+                    android:paddingStart="15dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/detail"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="30dp"
+                    android:paddingTop="7dp"/>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/statusaktivitas"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Status Aktivitas"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/namakegiatan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Nama Kegiatan"
+                android:paddingStart="15dp"/>
+
+            <EditText
+                android:id="@+id/namakios"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Nama Kios"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/produkaktivitas"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Produk"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/jumlahpartisipan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Jumlah Partisipan"
+                android:paddingStart="15dp"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/budget"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Budget"
+                android:paddingStart="15dp"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Lokasi"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/areasales"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Area Sales"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Provinsi"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/statusapps"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Status"
+                android:paddingStart="15dp"/>
+            <TextView
+                android:id="@+id/btnPilihFoto"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:drawableStart="@drawable/uploadbtn"
+                android:textSize="14sp"
+                android:text="Upload Foto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/custom_button_input"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"/>
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="292dp"
+                android:layout_height="157dp"
+                android:layout_gravity="center"
+                android:background="@color/grey_font"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/btnsubmit"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_btnsubmit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

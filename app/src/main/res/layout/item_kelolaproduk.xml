@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/merk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Produk"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/main"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="5dp" />
+
+        <ImageView
+            android:id="@+id/btndetail"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/detail" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/penjelasanproduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Foto"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/gambarproduk"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bgproduk"
+                android:layout_marginBottom="10dp"
+                android:padding="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/hapus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delete"
+                    android:layout_marginBottom="10dp" />
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/small_skate"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</LinearLayout>

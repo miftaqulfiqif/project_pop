@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Report.TambahReport">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+            <ImageView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:src="@drawable/header"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:gravity="center"
+                android:text="DAFTAR REPORT BARU"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_dasboard"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tanggalreport"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Pilih Tanggal"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:paddingStart="15dp"/>
+
+            <RelativeLayout
+                android:id="@+id/viewspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/custom_input"
+                    android:spinnerMode="dropdown"
+                    android:paddingStart="15dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/detail"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="30dp"
+                    android:paddingTop="7dp"/>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/notelp"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Nomor Telepon"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/namapetani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Nama Petani"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/produk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Produk"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/dosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Dosis"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/tanaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Tanaman"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Kabupaten"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Kecamatan"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:id="@+id/desa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Desa"
+                android:paddingStart="15dp"/>
+
+            <EditText
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Masukkan Result"
+                android:paddingStart="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <RadioButton
+                        android:id="@+id/baru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baru" />
+                    <RadioButton
+                        android:id="@+id/lama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lama" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/status"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:background="@drawable/custom_input"-->
+            <!--                android:hint="Masukkan Status"-->
+            <!--                android:paddingStart="15dp"/>-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/statusapps"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:background="@drawable/custom_input"-->
+            <!--                android:hint="Masukkan Status Apps"-->
+            <!--                android:paddingStart="15dp"/>-->
+            <TextView
+                android:id="@+id/btnPilihFoto"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:drawableStart="@drawable/uploadbtn"
+                android:textSize="14sp"
+                android:text="Upload Foto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/custom_button_input"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="15dp"/>
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="292dp"
+                android:layout_height="203dp"
+                android:background="@color/grey_font"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/btnsubmit"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_btnsubmit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

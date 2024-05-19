@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.cakraagro.cakraagroindonesia.ActivitySecretary.DashboardSecretary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:src="@drawable/header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:gravity="center"
+                android:text="DASHBOARD"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_dasboard" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/infosupervisor"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="INFO SUPERVISOR"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infodemonstrator"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:text="INFO DEMONSTRATOR"
+            android:textColor="@color/main"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

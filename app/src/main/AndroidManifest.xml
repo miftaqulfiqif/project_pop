@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" android:minSdkVersion="30"  />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" android:minSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" android:minSdkVersion="4"/>
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CakraAgroIndonesia"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.TentangKami.SosialMedia"
+            android:exported="false" />
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.UbahAdmin"
+            android:exported="false" />
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.UbahSuperadmin"
+            android:exported="false" />
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Notifikasi.AcceptNotif"
+            android:exported="false"
+            android:theme="@style/TransparentActivityTheme" />
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.BonusDistributor.UbahBonusDistributor"
+            android:exported="false" />
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.EditProfileSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Report.KelolaReportBaru"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Report.ReportDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.BonusDistributor.TambahBonusDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.BonusDistributor.KelolaBonusDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.ProfileSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivitySecretary.KelolaSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.DetailInfoMaster.InfoSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityDistributor.PanelDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityDemonstrator.PanelDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivitySupervisor.KelolaSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.EditProfileDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.EditProfileDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.ProfileDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.ProfileDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.EditProfileSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.ProfileSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivitySupervisor.DashboardSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivitySupervisor.PanelSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.DetailInfoMaster.InfoDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.Distributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.Secretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.Supervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.DetailInfoMaster.InfoDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.EditProfileManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Notifikasi.Notifikasi"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.UbahPaketProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.UbahProdukHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Report.UbahReport"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Aktivitas.UbahAktivitas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.UbahBerita"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivitySecretary.DashboardSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivitySecretary.PanelSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityManager.KelolaManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityManager.DashboardManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityManager.PanelManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.DetailInfoMaster.InfoSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.ProfileMaster.ProfileManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.DataMaster.Demonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.UbahDataAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.UbahDataSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.UbahDataSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.UbahDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.UbahManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.UbahDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Pertanyaan.UbahQNA"
+            android:exported="false"
+            android:theme="@style/TransparentActivityTheme"> <!-- Menggunakan tema transparan untuk PopupActivity -->
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Pertanyaan.UbahFAQ"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.HapusData"
+            android:exported="false"
+            android:theme="@style/TransparentActivityTheme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Produk.UbahProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.UbahProdukBaru"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.TentangKami.UbahAlamat"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.TambahProdukHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.KelolaProdukHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.TambahQNA"
+            android:exported="false"
+            android:theme="@style/TransparentActivityTheme"> <!-- Menggunakan tema transparan untuk PopupActivity -->
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.TentangKami.TambahAlamat"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.TentangKami.KelolaAlamat"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.TentangKami.DeskripsiVisiMisi"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.TentangKami.KelolaTentangKami"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.TambahProdukBaru"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.TambahPaketProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.KelolaPaketProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.KelolaProdukBaru"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Inovasi.KelolaInovasi"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Produk.TambahProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Produk.KelolaProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.TambahBerita"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.KelolaBerita"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.Homepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Beranda.KelolaBeranda"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Pertanyaan.TambahFAQ"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Pertanyaan.KelolaPertanyaan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Pertanyaan.KelolaFAQ"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Pertanyaan.KelolaQNA"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.TambahDataManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataManager"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.TambahDataDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataDistributor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.TambahDataDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataDemonstrator"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.TambahDataSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataSupervisor"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.TambahDataSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataSecretary"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.TambahDataAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataMaster"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Aktivitas.TambahAktivitas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Aktivitas.KelolaAktivitas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Report.TambahReport"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Report.KelolaReport"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Log.LogUser"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Log.LogMaster"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Log.LogAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Log.LogSuperAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Log.Log"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.DashboardAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.DashboardSuperadmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.Pgr"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.Herbisida"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.Fungisida"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.FAQ"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.QNA"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.PaketProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.ProdukBaru"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.Demplot"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.Aktivitas"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.DetailProduk"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.ActivityCustomer.Insektisida"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.Activity.Panel"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- Tambahkan bagian ini -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.yourapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cakraagro.cakraagroindonesia.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

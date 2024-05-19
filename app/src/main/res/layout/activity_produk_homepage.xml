@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Beranda.KelolaProdukHomepage">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@drawable/header" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="PRODUK HOMEPAGE"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_dasboard" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_kelolaprodukhomepage"
+        android:layout_below="@id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        tools:listitem="@layout/item_kelolaprodukhomepage"
+        tools:itemCount="4"/>
+    <LinearLayout
+        android:layout_below="@id/rv_kelolaprodukhomepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/bgdisplayproduk"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:background="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+            <TextView
+                android:id="@+id/btnPilihFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableStart="@drawable/uploadbtn"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:text="Upload Foto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:background="@drawable/custom_button_input"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnubah"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Ubah"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btnsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/btntambah"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btnadd"
+        android:layout_toRightOf="@id/btnubah"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

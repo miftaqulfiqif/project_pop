@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/idTentangKami"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="idTentangKami"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:src="@drawable/bigheader" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/skate" />
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="deskripsi"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="VISI"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/visi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="visi"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="MISI"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/misi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="misi"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/skate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ALAMAT"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/fotokantor"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/namakantor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="namakantor"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alamat"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/telepon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="telepon"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/skate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="SOSIAL MEDIA"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="-10dp"
+
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/btnfacebook" />
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:scaleType="fitStart"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/btninstagram" />
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:scaleType="fitStart"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/btnyoutube" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/skate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LAINNYA"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnpanel"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_buttondark"
+                android:text="PANEL"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

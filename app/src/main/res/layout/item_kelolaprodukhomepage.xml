@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/merkproduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Merk Produk"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/btndetail"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/detail" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/skate"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:src="@drawable/small_skate"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5dp" />
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="20dp"
+                android:background="@color/grey_font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/foto"
+                    android:layout_width="100dp"
+                    android:layout_height="180dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingVertical="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/merk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Produk"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="deskripsi"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/hapus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delete" />
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

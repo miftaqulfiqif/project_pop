@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/gambarberanda"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:paddingHorizontal="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/judulberanda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Judul"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/deksripsiberanda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="deskripsi"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:text="Produk Kami"
+                    android:textColor="@color/main"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:id="@+id/bgdisplayproduk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/indicatorLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:text="Demplot Terbaru"
+                    android:textColor="@color/main"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tampildemplot"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Berita Terbaru"
+                    android:textColor="@color/main"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_berita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    app:fastScrollEnabled="false"
+                    android:nestedScrollingEnabled="false"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingBottom="30dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_popup"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Tambah Pertanyaan"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/main"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:hint="Tanggal"
+            android:textColor="@color/black"
+            android:textColorHint="#7E000000"
+            android:inputType="none"
+            android:focusable="false"
+            android:textSize="16sp"
+            android:background="@drawable/custom_input"
+            android:paddingStart="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:hint="Judul"
+            android:textColor="@color/black"
+            android:textColorHint="#7E000000"
+            android:textSize="16sp"
+            android:background="@drawable/custom_input"
+            android:paddingStart="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:hint="Nama"
+            android:textColor="@color/black"
+            android:textColorHint="#7E000000"
+            android:textSize="16sp"
+            android:background="@drawable/custom_input"
+            android:paddingStart="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/notelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:hint="Nomor Telepon"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="#7E000000"
+            android:background="@drawable/custom_input"
+            android:paddingStart="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/pertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:hint="Pertanyaan"
+            android:textColor="@color/black"
+            android:textColorHint="#7E000000"
+            android:background="@drawable/custom_input"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="top"
+            android:paddingStart="20dp" />
+
+        <TextView
+            android:id="@+id/btnPilihFoto"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/uploadbtn"
+            android:textSize="14sp"
+            android:text="Upload Foto"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/custom_button_input"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/kirim"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Kirim"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_btnsubmit" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cakraagro.cakraagroindonesia.Login"
+    android:background="@drawable/bg_login">
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="297dp"
+        android:background="@drawable/bg_popup"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_input"
+            android:hint="Username"
+            android:textSize="14sp"
+            android:paddingStart="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <RelativeLayout
+            android:layout_width="277dp"
+            android:layout_height="35dp">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_input"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textSize="14sp"
+                android:paddingStart="20dp"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/showpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/showpass"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnmasuk"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Masuk"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_btnsubmit"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

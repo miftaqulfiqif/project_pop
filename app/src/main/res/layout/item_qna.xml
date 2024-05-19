@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/custom_input"
+    android:padding="15dp"
+    android:layout_marginVertical="10dp">
+
+    <RelativeLayout
+        android:id="@+id/tampildetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Nama User"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/pertanyaan"
+            android:layout_below="@id/nama"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word" />
+
+        <ImageView
+            android:id="@+id/btndetail"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/detail" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_font"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/jawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Belum Ada Respon"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/container">
+
+    <TextView
+        android:id="@+id/idproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/namabahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:text="NAMAPRODUK"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/formulasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="zat kimia pada produk"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tanaman"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="10dp"
+        android:text="Deksripsi lengkap tentang nama paket dan nama tanaman"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="26dp">
+
+        <ImageView
+            android:id="@+id/hapus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/delete"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

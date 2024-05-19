@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    app:cardElevation="0dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="-20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout
+            android:id="@+id/textlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/penjelasanproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/merk"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Nama Produk"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="21dp"
+        >
+
+        <ImageView
+            android:id="@+id/gambarproduk"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgproduk"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

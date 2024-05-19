@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingBottom="30dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_popup"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/jenis"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="APAKAH REPORT DI SETUJUI ?"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tidak"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:text="Tidak"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/cutom_delete" />
+
+            <TextView
+                android:id="@+id/setuju"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:text="Setuju"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_btnsubmit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

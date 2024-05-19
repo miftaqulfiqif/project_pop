@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PT. Cakra Argo Indonesia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="spinner_prompt">Jenis Produk</string>
+    <string-array name="spinner_items">
+        <item>INSEKTISIDA</item>
+        <item>FUNGISIDA</item>
+        <item>HERBISIDA</item>
+        <item>PGR</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

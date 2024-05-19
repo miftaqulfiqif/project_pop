@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Beranda.UbahProdukHomepage">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@drawable/header" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="UBAH PRODUK HOMEPAGE"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_dasboard" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/merkproduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_input"
+            android:hint="Masukkan Merk Produk"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/deskripsiproduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:minLines="5"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:background="@drawable/custom_input"
+            android:hint="Masukkan Deskripsi Produk"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/btnPilihFoto"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/uploadbtn"
+            android:textSize="14sp"
+            android:text="Upload Foto"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/custom_button_input"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:padding="25dp"
+            android:background="@drawable/bgproduk"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnsubmit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btnsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>

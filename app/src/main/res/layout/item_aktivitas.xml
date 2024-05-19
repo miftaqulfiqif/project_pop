@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bgrounded"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/bgrounded"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tanggalaktivitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="#333333"
+                android:paddingVertical="10dp"
+                android:layout_below="@id/bottom" />
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:background="#1B4E91"
+                android:layout_alignParentBottom="false">
+
+                <TextView
+                    android:id="@+id/kegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kegiatan"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

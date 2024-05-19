@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingVertical="3dp" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:paddingVertical="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingVertical="3dp" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:paddingVertical="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingVertical="3dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:paddingVertical="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingVertical="3dp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:paddingVertical="3dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/small_skate" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnedit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/edit"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/btnhapus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete"
+        android:layout_toLeftOf="@id/btnedit"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>

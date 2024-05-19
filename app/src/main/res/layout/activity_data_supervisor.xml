@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.KelolaDataMaster.KelolaDataSupervisor">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@drawable/header" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="DATA SUPERVISOR"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_dasboard" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_supervisor"
+        android:layout_below="@id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="15dp" />
+
+    <TextView
+        android:id="@+id/btntambah"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Tambahkan"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btnsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

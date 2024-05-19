@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Produk.TambahProduk">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/headerdataadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:src="@drawable/header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:gravity="center"
+                android:text="UBAH PRODUK"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_dasboard" />
+
+            <EditText
+                android:id="@+id/namaproduk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Nama Produk"
+                android:paddingStart="15dp" />
+
+            <EditText
+                android:id="@+id/deskripsiproduk"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:hint="Deskripsi Produk"
+                android:padding="15dp"
+                android:gravity="top" />
+
+            <ImageView
+                android:id="@+id/tampilfoto"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/bgproduk"
+                android:padding="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/uploadfoto"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:drawableStart="@drawable/uploadbtn"
+                android:textSize="14sp"
+                android:text="Upload Foto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/custom_button_input"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btntambah"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btnsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

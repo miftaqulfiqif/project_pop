@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.ActivityCustomer.Insektisida">
+
+    <ImageView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:src="@drawable/header" />
+
+    <TextView
+        android:id="@+id/imgjenisproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_title"
+        android:background="@drawable/bgjenisproduk"
+        android:gravity="center"
+        android:text="INSEKTISIDA"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgjenisproduk"
+        app:cardElevation="4dp"
+        >
+        <LinearLayout
+            android:id="@+id/searchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgjenisproduk"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="315dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:paddingVertical="2dp"
+                android:layout_below="@id/imgjenisproduk"
+                android:background="@drawable/custom_input_search"
+                android:hint="Search"
+                android:paddingStart="20dp" />
+
+            <ImageView
+                android:id="@+id/btnsearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_search_24" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/shadowheader"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:rotation="180"
+        android:background="@drawable/shadow"
+        android:layout_alignBottom="@+id/searchcard"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/searchcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_insektisida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/searchcard"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/bgrounded"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgrounded"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/namademonstrator"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="Nama Demonstrator"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="#333333"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="5dp"
+                android:layout_above="@id/bottom" />
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="3dp"
+                android:background="#1B4E91"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/kabupaten"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:text="kabupaten"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tanggaldemplot"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:text="Tanggal"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

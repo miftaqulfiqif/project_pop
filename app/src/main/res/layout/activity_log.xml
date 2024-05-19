@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cakraagro.cakraagroindonesia.Activity.Log.Log">
+
+    <ImageView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:src="@drawable/header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:text="LOG"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_dasboard" />
+
+    <TextView
+        android:id="@+id/btnlogsuperadmin"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="LOG SUPER ADMIN"
+        android:textColor="@color/main"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btnlogadmin"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="LOG ADMIN"
+        android:textColor="@color/main"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnlogmaster"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="LOG MASTER"
+        android:textColor="@color/main"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnloguser"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="LOG USER"
+        android:textColor="@color/main"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
